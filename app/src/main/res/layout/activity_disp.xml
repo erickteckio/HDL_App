@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:background="@drawable/rounded_imageview"
+            android:scaleType="centerCrop"
+            android:src="@drawable/foto"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/addDeviceButton"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:background="@drawable/adicionardisp"
+            android:backgroundTint="@color/azul"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/allDevicesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Todos os dispositivos"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="100dp"
+        android:textColor="#231F20"/>
+
+    <ImageView
+        android:id="@+id/threeDotsImageView"
+        android:layout_width="30dp"
+        android:layout_height="16dp"
+        android:src="@drawable/more"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/allDevicesTextView"
+        android:layout_marginRight="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/allDevicesTextView"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="111dp"
+                android:orientation="vertical"
+                android:background="@drawable/dispositivofundo"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="103dp"
+                        android:layout_height="94dp"
+                        android:background="@drawable/imagemdisp"
+                        android:layout_marginLeft="12dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        >
+                        <TextView
+                            android:id="@+id/NomeDisp1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Porteiro"
+                            android:textColor="#231F20"
+                            android:fontFamily="@font/roboto"
+                            android:layout_marginTop="15dp"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:id="@+id/StatusDisp2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Online"
+                            android:textColor="#00F092"
+                            android:fontFamily="@font/roboto"
+                            android:layout_marginTop="15dp"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="111dp"
+                android:orientation="vertical"
+                android:background="@drawable/dispositivofundo"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="103dp"
+                        android:layout_height="94dp"
+                        android:background="@drawable/imagemdisp"
+                        android:layout_marginLeft="12dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        >
+                        <TextView
+                            android:id="@+id/NomeDisp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Porteiro"
+                            android:textColor="#231F20"
+                            android:fontFamily="@font/roboto"
+                            android:layout_marginTop="15dp"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:id="@+id/StatusDisp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Online"
+                            android:textColor="#00F092"
+                            android:fontFamily="@font/roboto"
+                            android:layout_marginTop="15dp"
+                            android:textSize="14dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/azul"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+        <Button
+            android:id="@+id/CameraAtivado"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/cameraativado"
+            android:textColor="#FFFFFF"
+
+            />
+        <Button
+            android:layout_marginLeft="45dp"
+            android:id="@+id/not"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/notificacaodesativado"
+            android:onClick="telaNot"
+            />
+
+        <Button
+            android:layout_marginLeft="45dp"
+            android:id="@+id/galeria"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/galeriadesativado"
+            android:onClick="telaGaleria"
+            />
+
+        <Button
+            android:layout_marginLeft="45dp"
+            android:id="@+id/perfil"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/perfildesativado"
+
+            />
+    </LinearLayout>
+</RelativeLayout>

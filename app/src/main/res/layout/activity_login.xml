@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:transitionName="logoTransition"
+        android:layout_centerHorizontal="true"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+        <EditText
+            android:id="@+id/usuarioEditText"
+            android:background="@drawable/rounded_edittext"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:paddingStart="10dp"
+            android:fontFamily="@font/roboto"
+            android:hint="Usuário"
+            android:inputType="text"
+            android:autofillHints="Usuário"
+            android:textColor="#6D6D6D"
+            android:textSize="14sp"
+            android:onClick="onLoginButtonClick"/>
+
+        <EditText
+            android:id="@+id/senhaEditText"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="@font/roboto"
+            android:hint="Senha"
+            android:autofillHints="Senha"
+            android:inputType="textPassword"
+            android:textColor="#6D6D6D"
+            android:textSize="14sp"
+            android:paddingStart="10dp"/>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/shapebutton"
+            android:fontFamily="@font/roboto"
+            android:layout_marginTop="15dp"
+            android:text="ENTRAR"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:onClick="onLoginButtonClick"/>
+
+        <TextView
+            android:id="@+id/createAccountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Criar nova conta"
+            android:textColor="#C2C2C2"
+            android:fontFamily="@font/roboto"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/recoverPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recuperar Senha"
+            android:textColor="#C2C2C2"
+            android:fontFamily="@font/roboto"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+</RelativeLayout>
+
