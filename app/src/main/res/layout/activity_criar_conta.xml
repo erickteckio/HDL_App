@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/seta"
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+        android:padding="8dp"
+        android:src="@drawable/seta"
+        android:onClick="voltaLogin"/>
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:textSize="24sp"
+        android:layout_marginLeft="75px"
+        android:layout_marginTop="50px"
+        android:fontFamily="@font/roboto"/>
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu Email"
+        android:inputType="textEmailAddress"
+        android:background="#f7f7f7"
+        android:layout_marginLeft="75px"
+        android:layout_marginRight="75px"
+        android:padding="30px"
+        android:layout_marginTop="50px"
+        android:fontFamily="@font/roboto"/>
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira seu Username"
+        android:inputType="text"
+        android:background="#f7f7f7"
+        android:layout_marginLeft="75px"
+        android:layout_marginRight="75px"
+        android:padding="30px"
+        android:layout_marginTop="20px"
+        android:fontFamily="@font/roboto"/>
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Insira sua senha"
+        android:inputType="textPassword"
+        android:background="#f7f7f7"
+        android:layout_marginLeft="75px"
+        android:layout_marginRight="75px"
+        android:padding="30px"
+        android:layout_marginTop="20px"
+        android:fontFamily="@font/roboto"/>
+    <EditText
+        android:id="@+id/repetirSenhaInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Repita sua senha"
+        android:inputType="textPassword"
+        android:background="#f7f7f7"
+        android:layout_marginLeft="75px"
+        android:layout_marginRight="75px"
+        android:padding="30px"
+        android:layout_marginTop="20px"
+        android:fontFamily="@font/roboto"/>
+
+
+
+
+    <CheckBox
+        android:id="@+id/agreementCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailInput"
+        android:text="Eu concordo com a Política de privacidade, Termo de Acordo do Usuário e Política de Privacidade das Crianças"
+        android:layout_marginLeft="75px"
+        android:layout_marginRight="75px"
+        android:padding="30px"
+        android:layout_marginTop="50px"
+        android:fontFamily="@font/roboto"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/shapebutton"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="15dp"
+        android:text="CRIAR CONTA"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginLeft="75px"
+        android:layout_marginRight="75px"
+        android:padding="30px"
+        android:onClick="criarConta"/>
+</LinearLayout>
+    </ScrollView>
+</RelativeLayout>

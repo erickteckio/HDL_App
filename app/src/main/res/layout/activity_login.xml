@@ -70,7 +70,8 @@
             android:text="Criar nova conta"
             android:textColor="#C2C2C2"
             android:fontFamily="@font/roboto"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="15dp"
+            android:onClick="onCreateAccount"/>
 
         <TextView
             android:id="@+id/recoverPasswordTextView"
