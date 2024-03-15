@@ -86,7 +86,7 @@ public class CriarContaActivity extends AppCompatActivity {
                         if (serverResponse.equals("Sucesso")) {
                             Intent intent = new Intent(CriarContaActivity.this, DispActivity.class);
                             startActivity(intent);
-                        }else if (serverResponse.equals("usuarioexiste")){
+                        }else if (serverResponse.equals("usuarioexistea")){
                             runOnUiThread(new Runnable() {
                                 public void run() {
                                     Toast.makeText(CriarContaActivity.this, "Usuário já existe!", Toast.LENGTH_SHORT).show();
