@@ -16,6 +16,7 @@ public class DispActivity extends AppCompatActivity {
     public void telaNot(View view) {
         Intent intent = new Intent(this, NotificacaoActivity.class);
         startActivity(intent);
+
     }
     public void telaGaleria(View view) {
         Intent intent = new Intent(this, GaleriaActivity.class);
